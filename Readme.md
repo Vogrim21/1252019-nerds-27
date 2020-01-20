@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Виталий Новожилов](https://up.htmlacademy.ru/htmlcss/27/user/1252019).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Ефимов](https://htmlacademy.ru/profile/efiand).
 
 ---
 
