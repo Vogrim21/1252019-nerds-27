@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -17,7 +20,7 @@
           <li><a href="#nowhere">Контакты</a></li>
         </ul>
         <ul class="basket">
-          <li><a href="#nowhere"></a>Корзина</li>
+          <li><a href="#nowhere">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -76,7 +79,7 @@
         </div>
         <div class="statistics">
           <table>
-            <caption class="about-us-subtitle-2">С 2004 года любим точность во всем:</caption>
+            <caption class="about-us-subtitle">С 2004 года любим точность во всем:</caption>
             <thead>
               <tr>
                 <th class="statistics-sense">Уровень самоотдачи</th>
@@ -94,15 +97,40 @@
           </table>
         </div>
       </section>
+      <section class="partners">
+	    	<h2 class="visually-hidden">Наши партнеры</h2>
+		    <ul class="partners-list">
+		    	<li class="partners-item">
+		    		<a href="https://htmlacademy.ru/intensive/htmlcss">
+		    			<img src="img/htmlacdemy-logo.png" width="199" height="68" alt="HTML Academy">
+		    		</a>
+		    	</li>
+		    	<li class="partners-item">
+		    		<a href="#nowhere">
+		    			<img src="img/borodinsli-logo.png" width="209" height="87" alt="Borodinski">
+		    		</a>
+		    	</li>
+		    	<li class="partners-item">
+		    		<a href="#nowhere">
+		    			<img src="img/pink-logo.png" width="185" height="55" alt="Pink">
+		    		</a>
+		    	</li>
+		    	<li class="partners-item">
+		    		<a href="#nowhere">
+		    			<img src="img/mishka-logo.png" width="173" height="84" alt="Mishka">
+		    		</a>
+		    	</li>
+		   	</ul>
+	    </section>
     </main>
     <footer class="my-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Карта</h2>
-        <img src="img/map.png" alt="Карта как к нам проехать">
+        <img src="img/map.jpg" alt="Карта как к нам проехать">
         <div class="contacts-list">
           <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+          <p><a class="contacts-number" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
           <a class="btn btn-address" href="nowhere">Напишите нам</a>
         </div>
       </section>
@@ -111,7 +139,7 @@
         <ul class="feedback-groups">
           <li class="feedback-group">
             <label for="login">Ваше имя</label>
-            <input id="login" name="login" type="text" placeholder="Имя Фамилия" required="" autofocus="">
+            <input id="login" name="login" type="text" placeholder="Имя Фамилия" required="">
           </li>
           <li class="feedback-group">
             <label for="mail">Ваш e-mail:</label>
@@ -127,17 +155,17 @@
       </form>
       <ul class="social">
         <li class="social-item">
-          <a class="btn social-btn" href="#nowhere">
+          <a class="btn-social btn-vk" href="#nowhere">
             <span class="visually-hidden">VK</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="btn social-btn" href="#nowhere">
+          <a class="btn-social btn-fb" href="#nowhere">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="btn social-btn" href="#nowhere">
+          <a class="btn-social btn-insta" href="#nowhere">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
