@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,11 +15,11 @@
         <ul class="site-navigation">
           <li><a href="#nowhere">Студия</a></li>
           <li><a href="#nowhere">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a>Магазин</a></li>
           <li><a href="#nowhere">Контакты</a></li>
         </ul>
-        <ul class="basket">
-          <li><a href="#nowhere"></a>Корзина</li>
+        <ul class="site-navigation">
+          <li><a class="basket-link" href="#nowhere">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -25,7 +27,7 @@
       <h1 class="promo">Магазин готовых шаблонов</h1>
       <section>
         <form class="filter" action="https://echo.htmlacademy.ru/courses" method="post">
-          <fieldset>
+          <fieldset class="filter-border">
             <legend>Стоимость</legend>
             <div class="range-wrap">
               <div class="range">
@@ -45,45 +47,45 @@
               <input id="max" name="max" type="text" placeholder="15000">
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-border">
             <legend>Сетка:</legend>
-            <ul class="filter-grid">
-              <li class="filter-grid-item">
-                <input id="grid-1" name="grid" type="radio" checked>
-                <label for="grid-1">Адаптивная</label>
+            <ul class="filter-group">
+              <li class="filter-group-item">
+                <input class="visually-hidden filter-input-radio" id="grid-1" name="grid" type="radio" checked>
+                <label class="filter-check-label" for="grid-1">Адаптивная</label>
               </li>
-              <li class="filter-grid-item">
-                <input id="grid-2" name="grid" type="radio">
-                <label for="grid-2">Фиксированная</label>
+              <li class="filter-group-item">
+                <input class="visually-hidden filter-input-radio" id="grid-2" name="grid" type="radio">
+                <label class="filter-check-label" for="grid-2">Фиксированная</label>
               </li>
-              <li class="filter-grid-item">
-                <input id="grid-3" name="grid" type="radio">
-                <label for="grid-3">Резиновая</label>
+              <li class="filter-group-item">
+                <input class="visually-hidden filter-input-radio" id="grid-3" name="grid" type="radio">
+                <label class="filter-check-label" for="grid-3">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-border">
             <legend>Особенности:</legend>
-            <ul class="filter-features">
-              <li class="filter-features-item">
-                <input id="features-1" name="features" type="checkbox" checked>
-                <label for="features-1">Слайдер</label>
+            <ul class="filter-group">
+              <li class="filter-group-item">
+                <input class="visually-hidden filter-input-check" id="features-1" name="features" type="checkbox" checked>
+                <label class="filter-check-label" for="features-1">Слайдер</label>
               </li>
-              <li class="filter-features-item">
-                <input id="features-2" name="features" type="checkbox">
-                <label for="features-2">Блок преимуществ</label>
+              <li class="filter-group-item">
+                <input class="visually-hidden filter-input-check" id="features-2" name="features" type="checkbox">
+                <label class="filter-check-label" for="features-2">Блок преимуществ</label>
               </li>
-              <li class="filter-features-item">
-                <input id="features-3" name="features" type="checkbox" checked>
-                <label for="features-3">Новости</label>
+              <li class="filter-group-item">
+                <input class="visually-hidden filter-input-check" id="features-3" name="features" type="checkbox" checked>
+                <label class="filter-check-label" for="features-3">Новости</label>
               </li>
-              <li class="filter-features-item">
-                <input id="features-4" name="features" type="checkbox">
-                <label for="features-4">Галерея</label>
+              <li class="filter-group-item">
+                <input class="visually-hidden filter-input-check" id="features-4" name="features" type="checkbox">
+                <label class="filter-check-label" for="features-4">Галерея</label>
               </li>
-              <li class="filter-features-item">
-                <input id="features-5" name="features" type="checkbox">
-                <label for="features-5">Корзина</label>
+              <li class="filter-group-item">
+                <input class="visually-hidden filter-input-check" id="features-5" name="features" type="checkbox">
+                <label class="filter-check-label" for="features-5">Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -104,37 +106,37 @@
             <h2 class="products-title"><a href="#nowhere">SEDONA</a></h2>
             <img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
             <p class="products-txt">Информационный сайт для туристов</p>
-            <a class="btn" href="#nowhere">9900</a>
+            <a class="btn products-btn" href="#nowhere">9900</a>
           </li>
           <li class="products-item">
             <h2 class="products-title"><a href="#nowhere">Pink App</a></h2>
             <img src="img/pink.jpg" width="360" height="576" alt="Pink">
             <p class="products-txt">Продуктовый лендинг приложения для iOS и Android</p>
-				    <a class="btn" href="#nowhere">9900</a>
+				    <a class="btn products-btn" href="#nowhere">9900</a>
           </li>
           <li class="products-item">
             <h2 class="products-title"><a href="#nowhere">Borodinski</a></h2>
             <img src="img/barbershop.jpg" width="360" height="576"  alt="Borodinski">
             <p class="products-txt">Сайт салона красоты. Для мужчин, да.</p>
-				    <a class="btn" href="#nowhere">9900</a>
+				    <a class="btn products-btn" href="#nowhere">9900</a>
           </li>
           <li class="products-item">
             <h2 class="products-title"><a href="#nowhere">Mishka</a></h2>
             <img src="img/mishka.jpg" width="360" height="576" alt="Mishka">
             <p class="products-txt">Интернет-магазин вязаных игрушек</p>
-				    <a  class="btn" href="#nowhere">9900</a>
+				    <a  class="btn products-btn" href="#nowhere">9900</a>
           </li>
           <li class="products-item">
             <h2 class="products-title"><a href="#nowhere">A Plus</a></h2>
             <img src="img/aplus.jpg" width="360" height="576" alt="A Plus">
             <p class="products-txt">Лендинг курсов повышения квалификации</p>
-            <a class="btn" href="#nowhere">9900</a>
+            <a class="btn products-btn" href="#nowhere">9900</a>
           </li>
           <li class="products-item">
             <h2 class="products-title"><a href="#nowhere">Кваст</a></h2>
             <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">
             <p class="products-txt">Промо-сайт производителя крафтового кваса</p>
-			  	  <a class="btn" href="#nowhere">9900</a>
+			  	  <a class="btn products-btn" href="#nowhere">9900</a>
           </li>
         </ul>
         <ul class="pagination-list">
@@ -161,7 +163,7 @@
           <h3>Nёrds design studio</h3>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-          <a class="btn btn-address" href="nowhere">Напишите нам</a>
+          <a class="btn address-btn" href="nowhere">Напишите нам</a>
         </div>
       </section>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -185,23 +187,23 @@
       </form>
       <ul class="social">
         <li class="social-item">
-          <a class="btn social-btn" href="#nowhere">
+          <a class="social-btn btn-social-vk" href="#nowhere">
             <span class="visually-hidden">VK</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="btn social-btn" href="#nowhere">
+          <a class="social-btn btn-social-fb" href="#nowhere">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="btn social-btn" href="#nowhere">
+          <a class="social-btn btn-social-insta" href="#nowhere">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
       </ul>
       <div>
-        <p class="txt">Давайте дружить, это выгодно!</p>
+        <p class="social-txt">Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей</p>
       </div>
     </footer>
