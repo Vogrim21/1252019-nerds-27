@@ -27,8 +27,8 @@
       <h1 class="promo">Магазин готовых шаблонов</h1>
       <section>
         <form class="filter" action="https://echo.htmlacademy.ru/courses" method="get">
-          <fieldset class="filter-border">
-            <legend>Стоимость:</legend>
+          <fieldset class="form-group">
+            <legend class="form-group-name">Стоимость:</legend>
             <div class="range-wrap">
               <div class="range">
                 <div class="range-scale"></div>
@@ -47,49 +47,46 @@
               <input id="max" name="max" type="text" placeholder="15000">
             </div>
           </fieldset>
-          <fieldset class="filter-border">
-            <legend>Сетка:</legend>
-            <ul class="filter-group">
-              <li class="filter-group-item">
-                <input class="visually-hidden filter-input-radio" id="grid-1" name="grid" type="radio" checked>
-                <label class="filter-check-label" for="grid-1">Адаптивная</label>
-              </li>
-              <li class="filter-group-item">
-                <input class="visually-hidden filter-input-radio" id="grid-2" name="grid" type="radio">
-                <label class="filter-check-label" for="grid-2">Фиксированная</label>
-              </li>
-              <li class="filter-group-item">
-                <input class="visually-hidden filter-input-radio" id="grid-3" name="grid" type="radio">
-                <label class="filter-check-label" for="grid-3">Резиновая</label>
-              </li>
-            </ul>
+          <form action="https://echo.htmlacademy.ru">
+          <fieldset class="form-group">
+            <legend class="form-group-name">Сетка:</legend>
+            <label>
+              <input class="check visually-hidden" type="radio" name="grid" value="1" checked disabled>
+              <span class="check-label check-label-radio">Адаптивная</span>
+            </label>
+            <label>
+              <input class="check visually-hidden" type="radio" name="grid" value="2">
+              <span class="check-label check-label-radio">Фиксированная</span>
+            </label>
+            <label>
+              <input class="check visually-hidden" type="radio" name="grid" value="3">
+              <span class="check-label check-label-radio">Резиновая</span>
+            </label>
           </fieldset>
-          <fieldset class="filter-border">
-            <legend>Особенности:</legend>
-            <ul class="filter-group">
-              <li class="filter-group-item">
-                <input class="visually-hidden filter-input-check" id="features-1" name="features" type="checkbox" checked>
-                <label class="filter-check-label" for="features-1">Слайдер</label>
-              </li>
-              <li class="filter-group-item">
-                <input class="visually-hidden filter-input-check" id="features-2" name="features" type="checkbox">
-                <label class="filter-check-label" for="features-2">Блок преимуществ</label>
-              </li>
-              <li class="filter-group-item">
-                <input class="visually-hidden filter-input-check" id="features-3" name="features" type="checkbox" checked>
-                <label class="filter-check-label" for="features-3">Новости</label>
-              </li>
-              <li class="filter-group-item">
-                <input class="visually-hidden filter-input-check" id="features-4" name="features" type="checkbox">
-                <label class="filter-check-label" for="features-4">Галерея</label>
-              </li>
-              <li class="filter-group-item">
-                <input class="visually-hidden filter-input-check" id="features-5" name="features" type="checkbox">
-                <label class="filter-check-label" for="features-5">Корзина</label>
-              </li>
-            </ul>
+          <fieldset class="form-group">
+            <legend class="form-group-name">Особенности:</legend>
+            <label>
+              <input class="check visually-hidden" type="checkbox" name="features" value="1" checked>
+              <span class="check-label">Слайдер</span>
+            </label>
+            <label>
+              <input class="check visually-hidden" type="checkbox" name="features" value="2" checked disabled>
+              <span class="check-label">Блок преимуществ</span>
+            </label>
+            <label>
+              <input class="check visually-hidden" type="checkbox" name="features" value="3" checked>
+              <span class="check-label">Новости</span>
+            </label>
+            <label>
+              <input class="check visually-hidden" type="checkbox" name="features" value="4">
+              <span class="check-label">Галерея</span>
+            </label>
+            <label>
+              <input class="check visually-hidden" type="checkbox" name="features" value="5">
+              <span class="check-label">Корзина</span>
+            </label>
           </fieldset>
-          <button class="btn filter-submit" type="submit">Показать</button>
+          <button class="btn inner-btn"type="submit">Показать</button>
         </form>
         <h2 class="sorting-title">Сортировать:</h2>
         <ul class="sorting">
@@ -98,8 +95,8 @@
           <li><a class="sorting-item" href="#nowhere">По названию</a></li>
         </ul>
         <ul class="sorting">
-          <li><a class="sorting-dir sorting-dir-asc" href=#nowhere></a>По возрастанию</li>
-          <li><a class="sorting-dir sorting-dir-desc" href=#nowhere></a>По убыванию</li>
+          <li><a class="sorting-dir sorting-dir-asc sorting-highlighted" href="#nowhere" aria-label="По возрастанию"></a></li>
+          <li><a class="sorting-dir sorting-dir-desc" href="#nowhere" aria-label="По убыванию"></a></li>
         </ul>
         <ul class="products">
           <li class="products-item">
@@ -141,16 +138,16 @@
         </ul>
         <ul class="pagination-list">
 				  <li>
-					  <a class="btn pagination-link">1</a>
+					  <a class="btn inner-btn pagination-link">1</a>
 				  </li>
 				  <li>
-					  <a class="btn pagination-link" href="#nowhere">2</a>
+					  <a class="btn inner-btn pagination-link" href="#nowhere">2</a>
 				  </li>
 				  <li>
-					  <a class="btn pagination-link" href="#nowhere">3</a>
+					  <a class="btn inner-btn pagination-link" href="#nowhere">3</a>
 				  </li>
 			    <li>
-					  <a class="btn filter-submit" href="#nowhere">Следующая</a>
+					  <a class="btn inner-btn filter-submit" href="#nowhere">Следующая</a>
 				  </li>
 			  </ul>
       </section>
