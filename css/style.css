@@ -104,6 +104,7 @@ body {
 
 .nav-list li {
   margin-left: 46px;
+  margin-bottom: 20px;
 }
 
 .nav-list a {
@@ -138,12 +139,15 @@ body {
   padding-left: 39px;
 }
 
+.advantages {
+  background-color: #eeeeee;
+}
+
 .advantages-list {
-  display: flex;
-  flex-direction: column;
   list-style: none;
-  margin-top: 12px;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .advantages h3 {
@@ -151,12 +155,15 @@ body {
   font-weight: 700;
   font-size: 55px;
   line-height: 55px;
-  margin-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 65px;
+  padding-bottom: 12px;
 }
 
 .advantages-item {
   min-height: 430px;
-  background-position: 93% -30%;
+  background-position: 93% 40%;
   background-repeat: no-repeat;
 }
 
@@ -194,7 +201,7 @@ body {
   justify-content: space-between;
   padding-left: 0;
   margin: 0;
-  margin-top: 42px;
+  margin-top: 70px;
 }
 
 .benefits h3 {
