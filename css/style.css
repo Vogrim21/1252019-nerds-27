@@ -85,8 +85,7 @@ body {
 }
 
 .site-navigation {
-  margin-left: auto;
-  width: 630px;
+  width: 640px;
 }
 
 .user-navigation {
@@ -99,8 +98,8 @@ body {
   flex-wrap: wrap;
   list-style: none;
   padding-left: 0;
-  padding-top: 10px;
-  margin-bottom: 0;
+  padding-top: 25px;
+  margin: 0;
 }
 
 .nav-list li {
@@ -139,13 +138,6 @@ body {
   padding-left: 39px;
 }
 
-.advantages {
-  display: flex;
-  width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .advantages-list {
   display: flex;
   flex-direction: column;
@@ -159,19 +151,16 @@ body {
   font-weight: 700;
   font-size: 55px;
   line-height: 55px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .advantages-item {
-  display: flex;
   min-height: 430px;
-  width: 1160px;
   background-position: 93% -30%;
   background-repeat: no-repeat;
 }
 
 .advantages-item-1 {
-  flex-direction: column;
   background-image: url("../img/slide-1.png");
 }
 
@@ -194,28 +183,18 @@ body {
 
 .benefits {
   display: flex;
-  justify-content: space-between;
-  width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.benefits .container {
-  display: flex;
-  width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 26px;
-  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 70px;
 }
 
 .benefits-list {
   display: flex;
+  flex-wrap: wrap;
   width: 1100px;
   list-style: none;
   justify-content: space-between;
   padding-left: 0;
-  margin-bottom: 0;
+  margin: 0;
+  margin-top: 42px;
 }
 
 .benefits h3 {
@@ -229,8 +208,6 @@ body {
 
 .benefits-item {
   min-width: 300px;
-  display: flex;
-  flex-direction: column;
   padding-top: 10px;
   background-size: 300px 146px;
   background-repeat: no-repeat;
@@ -253,9 +230,9 @@ body {
 }
 
 .benefits-btn {
-  margin-bottom: 80px;
   margin-top: 17px;
-  max-width: 160px;
+  margin-bottom: 10px;
+  width: 160px;
 }
 .benefits-btn-1 {
   background-color: #fb565a;
@@ -287,14 +264,12 @@ body {
   background-color: #e5a722;
 }
 
-.about-us {
-  margin-top: 40px;
-}
-
 .about-us-inner {
   display: flex;
-  padding-bottom: 32px;
   border-bottom: 2px solid #eeeeee;
+  border-top: 2px solid #eeeeee;
+  padding-top: 40px;
+  padding-bottom: 32px;
 }
 
 .about-us-title {
@@ -446,6 +421,7 @@ body {
 
 .page-footer {
   padding-top: 60px;
+  margin-bottom: 60px;
 }
 
 .contacts {
@@ -889,6 +865,7 @@ fieldset:nth-child(3) {
   height: 10px;
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
+  color: #a6a6a6;
 }
 
 .sorting-dir-asc {
@@ -951,16 +928,17 @@ fieldset:nth-child(3) {
   min-height: 40px;
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
+  overflow: auto;
 }
 
 .products-description {
   width: 360px;
   min-height: 165px;
   text-align: center;
-  padding: 33px 0 40px;
+  padding: 33px 0 33px;
   background-color: #eeeeee;
   position: absolute;
-  bottom: 0;
+  bottom: 7px;
 }
 
 .products-item:not(:first-child) .products-description {
@@ -968,7 +946,7 @@ fieldset:nth-child(3) {
 }
 
 .products-item:not(:first-child):hover .products-description {
-    display: block;
+  display: block;
 }
 
 .description-title {
