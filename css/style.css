@@ -79,7 +79,7 @@ body {
 
 .page-navigation {
   display: flex;
-  padding-bottom: 25px;
+  font-weight: 500;
   padding-top: 50px;
 }
 
@@ -103,7 +103,7 @@ body {
 
 .nav-list li {
   padding-left: 46px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .nav-list a {
@@ -208,7 +208,7 @@ body {
 }
 
 .advantages h3 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   margin-top: 0;
@@ -220,24 +220,24 @@ body {
   display: none;
   box-sizing: border-box;
   background-repeat: no-repeat;
-  padding: 67px 0 78px 0;
+  padding: 77px 0 78px 0;
 }
 
 .advantages-item-1 {
   background-image: url("../img/slide-1.png");
-  background-position: 93% 100%;
+  background-position: 100% 100%;
   padding-right: 695px;
 }
 
 .advantages-item-2 {
   background-image: url("../img/slide-2.png");
-  background-position: 100% 0;
+  background-position: 100% 100%;
   padding-right: 643px;
 }
 
 .advantages-item-3 {
   background-image: url("../img/slide-3.png");
-  background-position: 100% 20px;
+  background-position: 100% 100%;
   padding-right: 715px;
 }
 
@@ -342,6 +342,7 @@ body {
   width: 660px;
   font-size: 45px;
   line-height: 45px;
+  font-weight: 500;
   margin-top: 0;
   margin-bottom: 35px;
 }
@@ -388,7 +389,7 @@ body {
 
 .about-us-subtitle {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .statistics {
@@ -409,7 +410,7 @@ body {
 
 .statistics-subtitle {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   margin-top: 14px;
   margin-bottom: 54px;
@@ -429,7 +430,7 @@ body {
 
 .statistics-percentages {
   font-size: 45px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 10px;
   padding-right: 15px;
 }
@@ -544,7 +545,7 @@ body {
 
 .feedback-form {
   position: relative;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .feedback-groups {
@@ -620,7 +621,7 @@ body {
 .social-txt {
   line-height: 36px;
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   padding-bottom: 10px;
 }
 
@@ -674,10 +675,11 @@ body {
 
 .promo {
   font-size: 55px;
+  font-weight: 500;
   line-height: 55px;
   text-align: center;
   margin: 0;
-  padding-top: 41px;
+  padding-top: 76px;
   padding-bottom: 109px;
   background-color: #eeeeee;
 }
@@ -1018,7 +1020,7 @@ fieldset:nth-child(3) {
 .description-title {
   margin-top: -6px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
   color: inherit;
 }
