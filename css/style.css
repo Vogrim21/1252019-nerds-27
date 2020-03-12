@@ -48,13 +48,6 @@ body {
   text-decoration: none;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1160px;
-  min-height: 100px;
-}
-
 .btn:hover,
 .btn:focus {
   background-color: #e74246;
@@ -86,6 +79,7 @@ body {
 
 .page-navigation {
   display: flex;
+  padding-bottom: 25px;
   padding-top: 50px;
 }
 
@@ -145,6 +139,7 @@ body {
 }
 
 .advantages {
+  position: relative;
   background-color: #eeeeee;
 }
 
@@ -154,12 +149,10 @@ body {
   justify-content: center;
   position: absolute;
   left: 50%;
-  bottom: 184px;
+  bottom: 104px;
   z-index: 100;
   width: 250px;
   height: 18px;
-  text-align: center;
-  font-size: 0;
   transform: translateX(-50%);
 }
 
@@ -171,7 +164,6 @@ body {
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
-  margin-bottom: 8px;
 }
 
 .advantages-commutator-1:checked~.advantages-switch .advantages-switch-item-1::before,
@@ -228,7 +220,7 @@ body {
   display: none;
   box-sizing: border-box;
   background-repeat: no-repeat;
-  padding: 42px 0 78px 0;
+  padding: 67px 0 78px 0;
 }
 
 .advantages-item-1 {
@@ -1087,6 +1079,12 @@ fieldset:nth-child(3) {
   background-color: transparent;
   border: 2px solid #dbdbdb;
   box-shadow: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
 }
 
 .visually-hidden {
