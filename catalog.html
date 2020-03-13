@@ -25,147 +25,143 @@
     </header>
     <main>
       <h1 class="promo">Магазин готовых шаблонов</h1>
-      <div class="page-store container">
-        <section>
-          <form class="filter" action="https://echo.htmlacademy.ru/courses" method="get">
-            <fieldset class="form-group">
-              <legend class="form-group-name">Стоимость:</legend>
-              <div class="range-wrap">
-                <div class="range">
-                  <div class="range-scale"></div>
-                  <button class="range-btn range-min" type="button">
-                    <span class="visually-hidden">Минимум</span>
-                  </button>
-                  <button class="range-btn range-max" type="button">
-                    <span class="visually-hidden">Максимум</span>
-                  </button>
-                </div>
+      <section class="page-store container">
+        <form class="filter" action="https://echo.htmlacademy.ru/courses" method="get">
+          <fieldset class="form-group">
+            <legend class="form-group-name">Стоимость:</legend>
+            <div class="range-wrap">
+              <div class="range">
+                <div class="range-scale"></div>
+                <button class="range-btn range-min" type="button">
+                  <span class="visually-hidden">Минимум</span>
+                </button>
+                <button class="range-btn range-max" type="button">
+                  <span class="visually-hidden">Максимум</span>
+                </button>
               </div>
-              <div class="filter-cost">
-                <label for="min">От</label>
-                <input id="min" name="min" type="text" placeholder="0">
-                <label class="filter-cost-max" for="max">До</label>
-                <input id="max" name="max" type="text" placeholder="15000">
+            </div>
+            <div class="filter-cost">
+              <label for="min">От</label>
+              <input id="min" name="min" type="text" placeholder="0">
+              <label class="filter-cost-max" for="max">До</label>
+              <input id="max" name="max" type="text" placeholder="15000">
+            </div>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend class="form-group-name">Сетка:</legend>
+            <label>
+              <input class="check visually-hidden" type="radio" name="grid" value="1" checked disabled>
+              <span class="check-label check-label-radio">Адаптивная</span>
+            </label>
+            <label>
+              <input class="check visually-hidden" type="radio" name="grid" value="2">
+              <span class="check-label check-label-radio">Фиксированная</span>
+            </label>
+            <label>
+              <input class="check visually-hidden" type="radio" name="grid" value="3">
+              <span class="check-label check-label-radio">Резиновая</span>
+            </label>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend class="form-group-name">Особенности:</legend>
+            <label>
+              <input class="check visually-hidden" type="checkbox" name="features" value="1" checked>
+              <span class="check-label">Слайдер</span>
+            </label>
+            <label>
+              <input class="check visually-hidden" type="checkbox" name="features" value="2" checked disabled>
+              <span class="check-label">Блок преимуществ</span>
+            </label>
+            <label>
+              <input class="check visually-hidden" type="checkbox" name="features" value="3" checked>
+              <span class="check-label">Новости</span>
+            </label>
+            <label>
+              <input class="check visually-hidden" type="checkbox" name="features" value="4">
+              <span class="check-label">Галерея</span>
+            </label>
+            <label>
+              <input class="check visually-hidden" type="checkbox" name="features" value="5">
+              <span class="check-label">Корзина</span>
+            </label>
+          </fieldset>
+          <button class="btn inner-btn" type="submit">Показать</button>
+        </form>
+        <div class="sorting-products">
+          <h2 class="sorting-title">Сортировать:</h2>
+          <ul class="sorting">
+            <li><a class="sorting-link sorting-highlighted" href="#nowhere">По цене</a></li>
+            <li><a class="sorting-link" href="#nowhere">По типу</a></li>
+            <li><a class="sorting-link" href="#nowhere">По названию</a></li>
+            <li><a class="sorting-dir sorting-dir-asc sorting-highlighted" href="#nowhere" aria-label="По возрастанию"></a></li>
+            <li><a class="sorting-dir sorting-dir-desc" href="#nowhere" aria-label="По убыванию"></a></li>
+          </ul>
+          <ul class="products">
+            <li class="products-item">
+              <img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
+              <div class="products-description">
+                <h2 class="description-title"><a href="#nowhere">Sedona</a></h2>
+                <p class="description-txt">Информационный сайт для туристов</p>
+                <a class="btn products-btn" href="#nowhere">9 900 руб.</a>
               </div>
-            </fieldset>
-            <fieldset class="form-group">
-              <legend class="form-group-name">Сетка:</legend>
-              <label>
-                <input class="check visually-hidden" type="radio" name="grid" value="1" checked disabled>
-                <span class="check-label check-label-radio">Адаптивная</span>
-              </label>
-              <label>
-                <input class="check visually-hidden" type="radio" name="grid" value="2">
-                <span class="check-label check-label-radio">Фиксированная</span>
-              </label>
-              <label>
-                <input class="check visually-hidden" type="radio" name="grid" value="3">
-                <span class="check-label check-label-radio">Резиновая</span>
-              </label>
-            </fieldset>
-            <fieldset class="form-group">
-              <legend class="form-group-name">Особенности:</legend>
-              <label>
-                <input class="check visually-hidden" type="checkbox" name="features" value="1" checked>
-                <span class="check-label">Слайдер</span>
-              </label>
-              <label>
-                <input class="check visually-hidden" type="checkbox" name="features" value="2" checked disabled>
-                <span class="check-label">Блок преимуществ</span>
-              </label>
-              <label>
-                <input class="check visually-hidden" type="checkbox" name="features" value="3" checked>
-                <span class="check-label">Новости</span>
-              </label>
-              <label>
-                <input class="check visually-hidden" type="checkbox" name="features" value="4">
-                <span class="check-label">Галерея</span>
-              </label>
-              <label>
-                <input class="check visually-hidden" type="checkbox" name="features" value="5">
-                <span class="check-label">Корзина</span>
-              </label>
-            </fieldset>
-            <button class="btn inner-btn" type="submit">Показать</button>
-          </form>
-        </section>
-        <section class="sorting-products">
-          <div class="container">
-            <h2 class="sorting-title">Сортировать:</h2>
-            <ul class="sorting">
-              <li><a class="sorting-link sorting-highlighted" href="#nowhere">По цене</a></li>
-              <li><a class="sorting-link" href="#nowhere">По типу</a></li>
-              <li><a class="sorting-link" href="#nowhere">По названию</a></li>
-              <li><a class="sorting-dir sorting-dir-asc sorting-highlighted" href="#nowhere" aria-label="По возрастанию"></a></li>
-              <li><a class="sorting-dir sorting-dir-desc" href="#nowhere" aria-label="По убыванию"></a></li>
-            </ul>
-            <ul class="products">
-              <li class="products-item">
-                <img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
-                <div class="products-description">
-                  <h2 class="description-title"><a href="#nowhere">Sedona</a></h2>
-                  <p class="description-txt">Информационный сайт для туристов</p>
-                  <a class="btn products-btn" href="#nowhere">9 900 руб.</a>
-                </div>
-              </li>
-              <li class="products-item">
-                <img src="img/pink.jpg" width="360" height="576" alt="Pink">
-                <div class="products-description">
-                  <h2 class="description-title"><a href="#nowhere">Pink App</a></h2>
-                  <p class="description-txt">Продуктовый лендинг приложения для iOS и Android</p>
-      				    <a class="btn products-btn" href="#nowhere">9 900 руб.</a>
-                </div>
-              </li>
-              <li class="products-item">
-                <img src="img/barbershop.jpg" width="360" height="576"  alt="Borodinski">
-                <div class="products-description">
-                  <h2 class="description-title"><a href="#nowhere">Borodinski</a></h2>
-                  <p class="description-txt">Сайт салона красоты. Для мужчин, да.</p>
-      				    <a class="btn products-btn" href="#nowhere">9 900 руб.</a>
-                </div>
-              </li>
-              <li class="products-item">
-                <img src="img/mishka.jpg" width="360" height="576" alt="Mishka">
-                <div class="products-description">
-                  <h2 class="description-title"><a href="#nowhere">Mishka</a></h2>
-                  <p class="description-txt">Интернет-магазин вязаных игрушек</p>
-      				    <a  class="btn products-btn" href="#nowhere">9 900 руб.</a>
-                </div>
-              </li>
-              <li class="products-item">
-                <img src="img/aplus.jpg" width="360" height="576" alt="A Plus">
-                <div class="products-description">
-                  <h2 class="description-title"><a href="#nowhere">A Plus</a></h2>
-                  <p class="description-txt">Лендинг курсов повышения квалификации</p>
-                  <a class="btn products-btn" href="#nowhere">9 900 руб.</a>
-                </div>
-              </li>
-              <li class="products-item">
-                <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">
-                <div class="products-description">
-                  <h2 class="description-title"><a href="#nowhere">Кваст</a></h2>
-                  <p class="description-txt">Промо-сайт производителя крафтового кваса</p>
-      			  	  <a class="btn products-btn" href="#nowhere">9 900 руб.</a>
-                </div>
-              </li>
-            </ul>
-            <ul class="pagination-list">
-    				  <li>
-    					  <a class="btn inner-btn pagination-link">1</a>
-    				  </li>
-    				  <li>
-    					  <a class="btn inner-btn pagination-link" href="#nowhere">2</a>
-    				  </li>
-    				  <li>
-    					  <a class="btn inner-btn pagination-link" href="#nowhere">3</a>
-    				  </li>
-    			    <li>
-    					  <a class="btn inner-btn filter-submit" href="#nowhere">Следующая</a>
-    				  </li>
-    			  </ul>
-          </div>
-        </section>
-      </div>
+            </li>
+            <li class="products-item">
+              <img src="img/pink.jpg" width="360" height="576" alt="Pink">
+              <div class="products-description">
+                <h2 class="description-title"><a href="#nowhere">Pink App</a></h2>
+                <p class="description-txt">Продуктовый лендинг приложения для iOS и Android</p>
+    				    <a class="btn products-btn" href="#nowhere">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="products-item">
+              <img src="img/barbershop.jpg" width="360" height="576"  alt="Borodinski">
+              <div class="products-description">
+                <h2 class="description-title"><a href="#nowhere">Borodinski</a></h2>
+                <p class="description-txt">Сайт салона красоты. Для мужчин, да.</p>
+    				    <a class="btn products-btn" href="#nowhere">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="products-item">
+              <img src="img/mishka.jpg" width="360" height="576" alt="Mishka">
+              <div class="products-description">
+                <h2 class="description-title"><a href="#nowhere">Mishka</a></h2>
+                <p class="description-txt">Интернет-магазин вязаных игрушек</p>
+    				    <a  class="btn products-btn" href="#nowhere">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="products-item">
+              <img src="img/aplus.jpg" width="360" height="576" alt="A Plus">
+              <div class="products-description">
+                <h2 class="description-title"><a href="#nowhere">A Plus</a></h2>
+                <p class="description-txt">Лендинг курсов повышения квалификации</p>
+                <a class="btn products-btn" href="#nowhere">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="products-item">
+              <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">
+              <div class="products-description">
+                <h2 class="description-title"><a href="#nowhere">Кваст</a></h2>
+                <p class="description-txt">Промо-сайт производителя крафтового кваса</p>
+    			  	  <a class="btn products-btn" href="#nowhere">9 900 руб.</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+  				  <li>
+  					  <a class="btn inner-btn pagination-link">1</a>
+  				  </li>
+  				  <li>
+  					  <a class="btn inner-btn pagination-link" href="#nowhere">2</a>
+  				  </li>
+  				  <li>
+  					  <a class="btn inner-btn pagination-link" href="#nowhere">3</a>
+  				  </li>
+  			    <li>
+  					  <a class="btn inner-btn filter-submit" href="#nowhere">Следующая</a>
+  				  </li>
+  			  </ul>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
       <section class="contacts">
