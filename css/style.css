@@ -446,7 +446,7 @@ body {
   list-style: none;
   width: 1200px;
   padding: 64px 0 0;
-  margin: 0 auto 20px;
+  margin: 0 auto 80px;
 }
 
 .partners-list::after {
@@ -490,7 +490,6 @@ body {
 }
 
 .page-footer {
-  padding-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -591,6 +590,7 @@ body {
 
 .social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .social-list {
@@ -608,7 +608,7 @@ body {
   min-height: 79px;
   margin: 0;
   padding-bottom: 12px;
-  margin-right: 8px;
+  margin-right: 12px;
 }
 
 .social-offers {
@@ -1001,7 +1001,7 @@ fieldset:nth-child(3) {
   padding: 33px 0 33px;
   background-color: #eeeeee;
   position: absolute;
-  bottom: 7px;
+  bottom: 17px;
   overflow: auto;
 }
 
@@ -1061,6 +1061,10 @@ fieldset:nth-child(3) {
   margin: 0;
   padding: 0;
   margin-top: 37px;
+}
+
+.pagination-list li {
+  margin-bottom: 60px;
 }
 
 .pagination-link {
