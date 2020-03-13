@@ -996,7 +996,6 @@ fieldset:nth-child(3) {
 
 .products-description {
   width: 360px;
-  max-height: 165px;
   text-align: center;
   padding: 33px 0 33px;
   background-color: #eeeeee;
