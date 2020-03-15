@@ -544,7 +544,7 @@ body {
 }
 
 .feedback-form {
-  position: relative;
+  position: fixed;
   font-weight: 700;
 }
 
@@ -682,8 +682,7 @@ body {
   line-height: 55px;
   text-align: center;
   margin: 0;
-  padding-top: 76px;
-  padding-bottom: 109px;
+  padding-top: 76px 0 109px;
   background-color: #eeeeee;
 }
 
@@ -708,8 +707,7 @@ body {
 }
 
 fieldset:nth-child(2) {
-  margin-top: 54px;
-  margin-bottom: 31px;
+  margin-top: 54px 0 31px;
 }
 
 fieldset:nth-child(3) {
@@ -717,14 +715,15 @@ fieldset:nth-child(3) {
 }
 
 .form-group-name {
-  margin: 0;
   font-weight: 700;
-  margin-bottom: 16px;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #000000;
   letter-spacing: 0.18px;
+  color: #000000;
+
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .range {
@@ -997,7 +996,7 @@ fieldset:nth-child(3) {
 .products-description {
   width: 360px;
   text-align: center;
-  padding: 33px 0 33px;
+  padding: 33px 0;
   background-color: #eeeeee;
   position: absolute;
   bottom: 17px;
