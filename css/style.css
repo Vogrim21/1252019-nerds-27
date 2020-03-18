@@ -244,7 +244,7 @@ ul {
 
 .advantages-txt {
   margin: 0;
-  padding: 16px 100px 16px 0;
+  padding: 16px 90px 16px 0;
 }
 
 .advantages-btn {
@@ -558,26 +558,15 @@ ul {
 
 .modal {
   display: none;
+  position: fixed;
   font-weight: 700;
   background-color: #ffffff;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-  position: fixed;
   z-index: 5;
-}
-
-.modal-login {
-  top: -20px;
-  margin-left: 282px;
+  padding: 73px 100px 84px;
+  top: 162px;
+  left: 333px;
   width: 760px;
-  z-index: 5;
-  padding: 65px 100px;
-}
-
-@keyframes bounce {
-0% { transform: translateY(-2000px); }
-70% { transform: translateY(30px); }
-90% { transform: translateY(-10px); }
-100% { transform: translateY(0); }
 }
 
 .modal-show {
@@ -585,28 +574,34 @@ ul {
   animation: bounce 0.6s;
 }
 
-.modal-login h2 {
-  margin-top: 0;
-  margin-bottom: 21px;
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal h2 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  margin: 0;
+  margin-bottom: 20px;
+  transform: translate(-1px, -6px);
 }
 
 .feedback-groups {
   display: flex;
   justify-content: space-between;
-  margin: 32px 0;
   padding: 0;
 }
 
 .feedback-group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px 0 36px;
 }
 
 .feedback-group label {
-  padding-bottom: 5px;
+  line-height: 18px;
+  padding-bottom: 7px;
 }
 
 .feedback-group input {
@@ -621,9 +616,11 @@ ul {
   border-radius: 3px;
 }
 
-.feedback-group input:invalid {
+.modal-invalid input:invalid,
+.modal-invalid textarea:invalid {
   color: #e74246;
   border: 2px solid #e74246;
+  box-shadow: none;
 }
 
 .feedback-group input:hover,
@@ -631,13 +628,15 @@ ul {
   border: 2px solid #b4b9bb;
 }
 
-.feedback-groups-message {
-  padding: 0;
+.feedback-message {
+  margin: 0;
+  margin-top: 20px;
 }
 
-.feedback-message textarea {
+.feedback-group textarea {
   height: 95px;
   padding: 10px 13px;
+  resize: vertical;
 }
 
 .popup-close {
@@ -649,16 +648,18 @@ ul {
   border: 0;
   font-size: 0;
   cursor: pointer;
+  padding: 0;
+  background-color: transparent;
 }
 
 .popup-close::before,
 .popup-close::after {
   content: "";
   position: absolute;
-  width: 19px;
+  width: 24px;
   height: 3px;
-  top: 10px;
-  left: 2px;
+  top: 40%;
+  left: 0;
   background-color: #f0595a;
   opacity: 0.3;
 }
@@ -679,7 +680,7 @@ ul {
 .form-submit {
   width: 260px;
   margin-top: 46px;
-  margin-bottom: 12px;
+  margin-bottom: 1px;
 }
 
 .page-social {
@@ -1078,20 +1079,22 @@ ul {
 }
 
 .products-item img {
+  display: block;
   margin-top: 40px;
 }
 
 .products-item::before {
   content: "";
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
   opacity: 0.12;
   position: absolute;
   min-height: 40px;
   min-width: 360px;
 }
 
-.products-item:hover {
-  background-image: url("../img/browser.svg");
-  background-repeat: no-repeat;
+.products-item:hover::before {
+  opacity: 1;
 }
 
 .products-description {
@@ -1100,7 +1103,7 @@ ul {
   padding: 33px 0;
   background-color: #eeeeee;
   position: absolute;
-  bottom: 17px;
+  bottom: 0;
   overflow: auto;
 }
 
@@ -1179,6 +1182,38 @@ ul {
   background-color: transparent;
   border: 3px solid #dbdbdb;
   box-shadow: none;
+}
+
+@keyframes bounce {
+  0% {
+    margin-top: -2000px;
+  }
+
+  70% {
+    margin-top: 30px;
+  }
+
+  90% {
+    margin-top: -10px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
 }
 
 .container {
