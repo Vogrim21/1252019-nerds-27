@@ -177,30 +177,27 @@
           </div>
         </div>
       </section>
-      <section class="modal modal-login">
+      <section class="modal">
         <h2>Напишите нам</h2>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <ul class="feedback-groups">
-            <li class="feedback-group">
+          <div class="feedback-groups">
+            <p class="feedback-group">
               <label for="login">Ваше имя</label>
               <input id="login" name="login" type="text" placeholder="Имя Фамилия" required="">
-            </li>
-            <li class="feedback-group">
+            </p>
+            <p class="feedback-group">
               <label for="mail">Ваш e-mail:</label>
               <input id="mail" name="mail" type="text" placeholder="email@example.com" required="">
-            </li>
-          </ul>
-          <ul class="feedback-groups-message">
-            <li class="feedback-group feedback-message">
-              <label for="text">Текст письма:</label>
-              <textarea id="text" name="text" placeholder="В свободной форме" required=""></textarea>
-            </li>
-          </ul>
+            </p>
+          </div>
+          <p class="feedback-group feedback-message">
+            <label for="text">Текст письма:</label>
+            <textarea id="text" name="text" placeholder="В свободной форме" required=""></textarea>
+          </p>
           <button class="btn form-submit" type="submit">Отправить</button>
           <button class="popup-close" type=button><span class="visually-hidden">Закрыть</span></button>
         </form>
       </section>
-      <script src="js/popup.js"></script>
       <section class="page-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <div class="container">
@@ -230,5 +227,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
