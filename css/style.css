@@ -1179,6 +1179,14 @@ body {
   min-width: 360px;
 }
 
+.products-item:focus-within::before {
+  opacity: 1;
+}
+
+.products-item:focus-within .products-description {
+  display: block;
+}
+
 .products-item:hover::before {
   opacity: 1;
 }
