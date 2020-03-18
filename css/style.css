@@ -609,8 +609,9 @@ ul {
           box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   z-index: 5;
   padding: 73px 100px 84px;
-  top: 162px;
-  left: 333px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 760px;
 }
 
