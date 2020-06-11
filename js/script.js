@@ -8,9 +8,8 @@ var link = document.querySelector(".address-btn");
 var popup = document.querySelector(".page-footer .modal");
 var close = document.querySelector(".popup-close");
 var login = popup.querySelector("[name=login]");
-var form = popup.querySelector(".feedback-form");
+var form = popup.querySelector("form");
 var email = popup.querySelector("[name=mail]");
-var message = popup.querySelector("[name=text]");
 var submitBtn = popup.querySelector("[type=submit]");
 var isStorageSupport = true;
 var storage = "";
@@ -44,8 +43,8 @@ submitBtn.addEventListener("click", function() {
   popup.classList.add("modal-invalid");
 });
 
-submitBtn.addEventListener("click", function (evt) {
-  if (!login.value || !email.value || !message.value) {
+form.addEventListener("click", function (evt) {
+  if (!login.value || !email.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
@@ -57,7 +56,6 @@ submitBtn.addEventListener("click", function (evt) {
     }
   }
 });
-
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
