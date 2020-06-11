@@ -121,7 +121,7 @@ body {
 .nav-list a {
   padding-bottom: 16px;
   border-bottom: 2px solid transparent;
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
